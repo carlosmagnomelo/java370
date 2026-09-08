@@ -6,7 +6,7 @@ public class AlgoritmoCinco
        
 
         // estrutura de seleção múltipla
-        int numAula = Integer.parseInt(IO.readln("Entre com um número de 1 a 4: "));
+       /*  int numAula = Integer.parseInt(IO.readln("Entre com um número de 1 a 4: "));
         switch (numAula) 
         {
             case 1:
@@ -30,6 +30,14 @@ public class AlgoritmoCinco
                 IO.println("Número inválido!");
 
         }
+                */
 
+        int numero;
+        numero = Integer.parseInt(IO.readln("digite um número: "));
+        
+        int antecessor = numero - 1;
+        int sucessor = numero + 1;
+        IO.println("O antecessor: " + antecessor);
+        IO.println("Sucessor: " + sucessor);
     }
 }
