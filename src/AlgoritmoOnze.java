@@ -1,4 +1,4 @@
-public class AlgoritimoOnze {
+public class AlgoritmoOnze {
     //Crie um algoritmo que leia o seu nome e verifique que realmente é o seu nome.
     public static void main(String[]args)
     {
