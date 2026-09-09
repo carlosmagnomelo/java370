@@ -28,16 +28,7 @@ Operadores lógicos: && (E) , II (OU) , !  (NÃO)
         }
     
         
-        else if (numero2 > numero1) 
-        {
-            IO.println("Número Maior: " + numero2);
-            IO.println( "Número Menor: " + numero1);
-        }
-        else if (numero1 < numero2) 
-        {
-             IO.println( "Número Menor: " + numero2);
-             IO.println("Número Maior: " + numero1);
-        }
+       
       
         
         
