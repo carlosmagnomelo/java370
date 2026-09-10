@@ -1,18 +1,17 @@
 public class AlgoritmoDezesseis {
-    public static void main(String[]args){
+    public static void main(String[]args)
+    {
         
-        int i = 1;
-        do
-        {
-            System.out.println(i);
-            i++;
-            
-        }
-        while(i <= 200);
+      int i = 0;
+      do
+      {
         if (i % 2 == 0) 
         {
-            System.out.println("Números pares: " + i);
+         System.out.println("Par: " + i);   
         }
+        i++;
+      }
+      while(i <=200);
     }
 
     
