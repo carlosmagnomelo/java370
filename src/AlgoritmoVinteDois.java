@@ -11,28 +11,27 @@ public class AlgoritmoVinteDois {
         As parcelas podem ser divididas em até 10 meses. 
         Mostre o valor total do financiamento, o valor financiado e a mensagem "Parabéns, seja bem vindo a família SENATECH. */
 
-        String [] usuario = {"senai"};
-        String [] senha = {"123"};
-        String n = IO.readln("Insira seu usuário: ");
-
-        boolean usuarioEncontrado = false;
-        for(String nome : usuario)
+        int tentativas = 0;
+        while (tentativas < 3) 
         {
-            System.out.println("Usuário: " + nome);
-            if (nome.equals (n)) 
+            String nome = IO.readln("digite seu usuario: ");
+            String senha = IO.readln("digite sua senha: ");
+
+            if (nome.equals("senai")) 
             {
-                System.out.println("Usuário correto: " + nome );
-                usuarioEncontrado = true;
-                break;
+              System.out.println("login com sucesso");
+              break;   
             }
-          
+            else
+            {
+                tentativas++;
+                System.out.println("login e senha errada! tente novamente: " + tentativas + "/3\n");
+            }
         }
-        for(String pass : senha)
+
+        if (tentativas == 3)     
         {
-            System.out.println("Senha: " + pass);
+            System.out.println("cartão bloqueado");    
         }
-
-
-
     }
 }
