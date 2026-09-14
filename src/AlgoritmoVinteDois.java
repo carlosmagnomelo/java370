@@ -17,11 +17,13 @@ public class AlgoritmoVinteDois {
             String nome = IO.readln("digite seu usuario: ");
             String senha = IO.readln("digite sua senha: ");
 
-            if (nome.equals("senai")) 
+            if (nome.equals("senai") && senha.equals("123")) 
             {
               System.out.println("login com sucesso");
-              break;   
+              break;   //serve para sair do sistema
             }
+            
+            
             else
             {
                 tentativas++;

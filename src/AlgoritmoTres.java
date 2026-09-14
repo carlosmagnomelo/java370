@@ -19,7 +19,7 @@ public class AlgoritmoTres {
         // SAÍDA das NOTAS, SOMA e MEDIA
         IO.println("Notas: " + nota1 + ", "+ nota2 + "," + nota3);
         IO.println("Soma: " + soma);
-        IO.println("Média: " +media);
+        IO.println("Média: " + media);
 
         if(media >= 5)
         {
