@@ -12,6 +12,8 @@ public class AlgoritmoVinteDois {
         Mostre o valor total do financiamento, o valor financiado e a mensagem "Parabéns, seja bem vindo a família SENATECH. */
 
         int tentativas = 0;
+        int parcelas = 0;
+
         while (tentativas < 3) 
         {
             String nome = IO.readln("digite seu usuario: ");
@@ -19,21 +21,28 @@ public class AlgoritmoVinteDois {
 
             if (nome.equals("senai") && senha.equals("123")) 
             {
-              System.out.println("login com sucesso");
+                System.out.println("login com sucesso");
+
+                IO.readln("Emprestimo máximo é 20.000| Quantas parcelas? ");
+                i++
+                double valor = Double.parseDouble(IO.readln("Digite o valor R$ "));
+                valor = valor * 1/100;
+              
               break;   //serve para sair do sistema
+              
             }
-            
-            
+          
             else
             {
                 tentativas++;
                 System.out.println("login e senha errada! tente novamente: " + tentativas + "/3\n");
             }
         }
-
-        if (tentativas == 3)     
-        {
-            System.out.println("cartão bloqueado");    
-        }
+            
+            if (tentativas == 3)     
+            {
+                System.out.println("cartão bloqueado, procure o gerente!");    
+            }
+        
     }
 }
