@@ -16,14 +16,15 @@ public class Algoritmo49 {
 
    public void main()
    {
-            ArrayList<String> laboratirio = new ArrayList<>();
+            
 
-            // Inicializa a lista de laboratórios
+        // Inicializa a lista de laboratórios
         List<String> laboratorios = new ArrayList<>();
         String opcao = "";
 
         // Loop do menu: 1- Adicionar, 2- Sair
-        while (!opcao.equals("2")) {
+        while (!opcao.equals("2")) 
+        {
             IO.println("--- MENU ---");
             IO.println("1 - Adicionar laboratório");
             IO.println("2 - Sair");
