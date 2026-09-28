@@ -15,19 +15,19 @@ public class Algoritmo51 {
             numero1 = Integer.parseInt(IO.readln("Digite o numero 1: "));
             numero2 = Integer.parseInt(IO.readln("Digite o numero 2: "));
             
-            //  SOMA
+            //  Soma
             int soma = numero1 + numero2;
             IO.println(" Soma: " + soma);
 
-            // SUBTRAÇÃO
+            // Subtração
             int subtracao = numero1 - numero2;
             IO.println(" Subtração: " + subtracao);
 
-            //  MULTIPLICAÇÃO
+            //  Multiplicação
             int multiplicacao = numero1 * numero2;
             IO.println(" Multiplicação: " + multiplicacao);
 
-            //  DIVISÃO
+            //  Divisão
             int divisao; 
             divisao = numero1 / numero2;
             IO.println("Resultado: " + divisao);
