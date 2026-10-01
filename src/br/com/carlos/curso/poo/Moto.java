@@ -1,0 +1,38 @@
+package br.com.carlos.curso.poo;
+public class Moto extends Veiculo implements IManutencao, IMeusImpostos {
+    
+    private Boolean temBau;
+
+    public Moto(String placa, int velocidadeMax, String tipoCombustivel, String cor, Boolean temBau) {
+        super(placa, velocidadeMax, tipoCombustivel, cor);
+        this.temBau = temBau;
+    }
+
+    public Boolean getTemBau() {
+        return temBau;
+    }
+
+    public void setTemBau(Boolean temBau) {
+        this.temBau = temBau;
+    }
+
+    @Override
+    public void mover() {
+        // TODO Auto-generated method stub
+        IO.print("A moto se moveu");
+    }
+
+    @Override
+    public void adicionar() {
+        // TODO Auto-generated method stub
+        IO.print("Impostos add");
+    }
+
+    @Override
+    public void revisaoProgramada() {
+        // TODO Auto-generated method stub
+        IO.print("Faça a revisão" + IManutencao.TAXA);
+    }
+
+    
+}
