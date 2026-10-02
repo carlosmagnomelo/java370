@@ -1,0 +1,3 @@
+B03;Sala de Aula Padrão
+F55;teste teste
+F07;Laboratório de Programação Java
