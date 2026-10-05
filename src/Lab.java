@@ -110,7 +110,7 @@ public class Lab {
         StringBuilder listaFormatada = new StringBuilder("--- AMBIENTES CADASTRADOS ---\n");
         for (String codigo : chaves.keySet()) {
             Chave c = chaves.get(codigo);
-            listaFormatada.append("Chave: ").append(codigo).append(" -> Description: \"").append(c.getDescricao()).append("\"\n");
+            listaFormatada.append("Chave: ").append(codigo).append(" -> Descrição: \"").append(c.getDescricao()).append("\"\n");
         }
 
         JOptionPane.showMessageDialog(null, listaFormatada.toString(), "Lista de Ambientes", JOptionPane.INFORMATION_MESSAGE);
